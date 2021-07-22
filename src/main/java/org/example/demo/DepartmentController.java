@@ -1,8 +1,9 @@
-package com.example.demo;
+package org.example.demo;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 
 @RestController
 public class DepartmentController {
@@ -11,4 +12,5 @@ public class DepartmentController {
     public String greeting(@PathVariable int id) {
         return "I am DepartmentController"+"---id="+id;
     }
+	
 }
